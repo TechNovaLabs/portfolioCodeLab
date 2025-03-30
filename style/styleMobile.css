@@ -1,0 +1,143 @@
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    /* Навигация */
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    /* Главный блок */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-text button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .hero-image {
+        flex: 1 1 100%;
+    }
+
+    /* Обо мне */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        order: 1;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Контакты */
+    .contact-form {
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.95rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    /* Портфолио */
+    .project {
+        height: 270px;
+    }
+
+    .modal-content {
+        margin: 10%;
+        max-width: 80%;
+    }
+
+    /* Футер */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Навигация */
+    .nav-bar {
+        gap: 10px;
+        display: flex;
+    }
+
+    /* Главный блок */
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .hero-text button {
+        padding: 8px 12px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* Чекбокс */
+    .privacy-checkbox label {
+        font-size: 0.8rem;
+    }
+}
