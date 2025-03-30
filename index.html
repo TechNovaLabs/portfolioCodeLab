@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>HTML-верстка и лендинги</title>
+    <link rel="shortcut icon" href="img/logoHeaderSiteIcon.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleMobile.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <!-- Логотип -->
+            <img src="img/logoHeader.png" alt="Логотип" class="logoHeader">
+
+            <!-- Бургер-меню -->
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Меню ссылок -->
+            <div class="menu">
+                <a href="index.html">Главная</a>
+                <a href="#about">Обо мне</a>
+                <a href="#featured-work">Портфолио</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <h1>Создаю адаптивные сайты и лендинги</h1>
+            <h2>Доступно, качественно и точно в срок</h2>
+            <p>Я занимаюсь версткой HTML-страниц и созданием лендингов, которые привлекают клиентов. Работаю с любыми
+                задачами — от небольшой посадочной страницы до сложных интерфейсов. Каждый проект — это индивидуальный
+                подход и современный дизайн.</p>
+            <button onclick="window.location='#contacts';">Связаться со мной</button>
+        </div>
+        <div class="hero-image">
+            <img src="img/backgroundImage.png" alt="HTML Верстка">
+        </div>
+    </section>
+    <!-- Модальное окно -->
+    <div id="feedBack" class="modalFeedBack">
+        <div class="modalContentFeedBack">
+            <span class="closeModalFeedBack">&times;</span>
+            <h2>Свяжитесь со мной</h2>
+
+            <p>Или напишите мне:</p>
+            <div class="contact-links">
+                <a href="https://t.me/ваш_телеграм" target="_blank" class="contact-link">
+                    <img src="img/telegramm.png" alt="Telegram" title="Источник иконки: Freepik">
+                </a>
+                <a href="https://wa.me/ваш_номер_телефона" target="_blank" class="contact-link">
+                    <img src="img/whatsapp.png" alt="WhatsApp" title="Источник иконки: Freepik">
+                </a>
+            </div>
+        </div>
+    </div>
+    <section id="about">
+        <h2>Обо мне</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Привет! Меня зовут <strong>Владислав</strong>, и я начинающий разработчик, специализируюсь на верстке
+                    адаптивных HTML-страниц и создании лендингов.</p>
+                <p>Каждый проект для меня — это возможность показать свои навыки, поэтому я уделяю максимум внимания
+                    деталям и результату.
+                    Несмотря на стартовый этап карьеры, я всегда стремлюсь к качеству и современным стандартам
+                    веб-дизайна.</p>
+                <p>Работаю с энтузиазмом, творческим подходом и гарантией, что ваш сайт будет удобным, стильным и
+                    привлекательным для клиентов.
+                    Готов воплотить ваши идеи в жизнь! Давайте сделаем ваш проект успешным вместе.</p>
+            </div>
+            <div class="about-image">
+                <img src="img/me.jpg" alt="Фото о себе">
+            </div>
+        </div>
+    </section>
+    <section id="why-me">
+        <h2>Почему выбирают меня?</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <img src="img/individual.png" alt="Индивидуальный подход" title="Источник иконки: Freepik">
+                <h3>Индивидуальный подход</h3>
+                <p>Каждый проект создается с учетом ваших задач и пожеланий.</p>
+            </div>
+            <div class="benefit">
+                <img src="img/quality.jpg" alt="Качество" title="Источник иконки: Freepik">
+                <h3>Качество</h3>
+                <p>Использую современные технологии и проверенные решения.</p>
+            </div>
+            <div class="benefit">
+                <img src="img/deadlines.jpg" alt="Сроки" title="Источник иконки: Freepik">
+                <h3>Соблюдение сроков</h3>
+                <p>Гарантирую выполнение проекта точно в оговоренные сроки.</p>
+            </div>
+            <div class="benefit">
+                <img src="img/adaptations.png" alt="Адаптивность" title="Источник иконки: Freepik">
+                <h3>Адаптивность</h3>
+                <p>Делаю Ваш проект адаптивным для всех устройств.</p>
+            </div>
+        </div>
+    </section>
+    <section id="featured-work">
+        <h2>Примеры моих работ</h2>
+        <div class="portfolio-preview">
+            <button class="carousel-btn prev" aria-label="Предыдущий">&#10094;</button>
+            <div class="carousel">
+                <div class="project">
+                    <h3><b class="titleProject">Unibridge</b> - Логистическая компания, специализирующаяся на доставке
+                        товаров из Китая</h3>
+                    <img src="img/project01.png" alt="Пример работы" class="enlargeable">
+                </div>
+                <div class="project">
+                    <h3><b class="titleProject">Robo School</b> - Онлайн школа которая проводит курсы повышения
+                        квалификации по робототехнике для педагогов начальной школы</h3>
+                    <img src="img/project02.png" alt="Пример работы" class="enlargeable">
+                </div>
+                <div class="project">
+                    <h3><b class="titleProject">Окна Хаус</b> - компания по остеклению многоквартирных и частных домов
+                    </h3>
+                    <img src="img/project03.png" alt="Пример работы" class="enlargeable">
+                </div>
+                <div class="project">
+                    <h3><b class="titleProject">Спец-транс</b> - Компания предоставляет услуги по продаже и доставке
+                        нерудных материалов</h3>
+                    <img src="img/project04.png" alt="Пример работы" class="enlargeable">
+                </div>
+                <div class="project">
+                    <h3><b class="titleProject">Atlant-fintes</b> - Современный фитнес клуб премиум-класа </h3>
+                    <img src="img/project05.png" alt="Пример работы" class="enlargeable">
+                </div>
+            </div>
+            <button class="carousel-btn next" aria-label="Следующий">&#10095;</button>
+        </div>
+        <a href="https://ru.pinterest.com/technovaforgelabs/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D1%80%D0%B0%D0%B1%D0%BE%D1%82-codelab/"
+            class="view-more" target="_blank">Смотреть все работы</a>
+    </section>
+
+    <!-- Модальное окно -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Просмотр изображения">
+    </div>
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <div class="contact-container">
+            <!-- Левый блок с текстом -->
+            <div class="contact-info">
+                <p>Ищете профессионала для создания адаптивного сайта или лендинга? Я всегда на связи! Задавайте
+                    вопросы, уточняйте детали или оставляйте заявку — отвечу максимально быстро. Давайте сделаем ваш
+                    проект успешным!</p>
+                <p>Свяжитесь со мной любым удобным способом:</p>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <img src="img/email.png" alt="Email" title="Источник иконки: Freepik">
+                        <a
+                            href="mailto:code.lab@inbox.ru?subject=Вопрос по сотрудничеству&body=Здравствуйте! Я заинтересован в ваших услугах...">code.lab@inbox.ru</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="img/telegramm.png" alt="Telegram" title="Источник иконки: Freepik">
+                        <a href="https://web.telegram.org/k/#@CoodeLab" target="_blank">Telegram</a>
+                    </div>
+                    <!-- <div class="contact-item">
+                        <img src="img/whatsapp.png" alt="WhatsApp" title="Источник иконки: Freepik">
+                        <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Правый блок с формой -->
+            <div class="contact-form">
+                <h3>Или оставьте заявку:</h3>
+                <form id="contact-form" action="send_email.php" method="POST">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                
+                    <label for="phone">Ваш телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+                
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" name="message" placeholder="Введите ваше сообщение" rows="4" required></textarea>
+                
+                    <div class="privacy-checkbox">
+                        <input type="checkbox" id="privacy-agree" name="privacy-agree" required>
+                        <label for="privacy-agree">Я согласен на обработку персональных данных согласно <a href="pages/privacyPolicy.html" target="_blank">Политике конфиденциальности</a></label>
+                    </div>
+                
+                    <button type="submit" id="submit-btn" disabled>Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <!-- Авторские права -->
+            <div class="footer-copyright">
+                <p>&copy; 2024 - 2025 Code Lab. Все права защищены.</p>
+            </div>
+            <!-- Социальные сети -->
+            <div class="footer-social">
+                <a href="https://web.telegram.org/k/#@CoodeLab" target="_blank">
+                    <img src="img/telegramm.png" alt="Telegram" title="Источник иконки: Freepik">
+                </a>
+                <a href="mailto:code.lab@inbox.ru?subject=Вопрос по сотрудничеству&body=Здравствуйте! Я заинтересован в ваших услугах..."
+                    target="_blank">
+                    <img src="img/email.png" alt="eMail" title="Источник иконки: Freepik">
+                </a>
+                <!-- <a href="#" target="_blank">
+                    <img src="img/pinterest.png" alt="Pinterest" title="Источник иконки: Freepik">
+                </a> -->
+                <a href="https://www.behance.net/technovaforge" target="_blank">
+                    <img src="img/behance.png" alt="Behance" title="Источник иконки: Freepik">
+                </a>
+                <a href="https://ru.pinterest.com/technovaforgelabs/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D1%80%D0%B0%D0%B1%D0%BE%D1%82-codelab/"
+                    target="_blank" alt="pinterest" title="Источник иконки: Freepik"><img src="img/pinterest.png"
+                        alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/navigationWork.js"></script>
+
+</body>
+
+</html>
